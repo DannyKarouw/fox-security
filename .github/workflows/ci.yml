@@ -6,4 +6,5 @@ on:
 
 jobs:
   call-central-ci:
-    uses: DannyKarouw/env-CICD-basic/.github/workflows/angular-ci.yml@develop
+    uses: dannykarouw/env-cicd-basic/.github/workflows/angular-ci.yml@develop
+
