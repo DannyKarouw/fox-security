@@ -8,3 +8,4 @@ jobs:
   call-central-ci:
     uses: dannykarouw/env-cicd-basic/.github/workflows/angular-ci.yml@develop
 
+
