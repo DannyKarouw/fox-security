@@ -1,27 +1,9 @@
-name: Angular CI
+name: Trigger Central Angular CI
 
 on:
   push:
     branches: [ "develop" ]
-  pull_request:
-    branches: [ "develop" ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Angular app
-        run: npm run build
+  call-central-ci:
+    uses: DannyKarouw/env-CICD-basic/.github/workflows/angular-ci.yml@develop
